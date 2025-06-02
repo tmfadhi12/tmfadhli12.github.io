@@ -43,10 +43,11 @@
   <header id="header">
     <div class="container">
 
-      <h1><a href="index.html">Thoriq Muhammad Fadhli</a></h1>
+      <h1><a href="/">Thoriq Muhammad Fadhli</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Graphic Designer</span> and <span>Web Developer</span> from Indonesia</h2>
+      <h2>I'm a passionate <span>Graphic Designer</span> , <span>DevOps</span> and <span>Fullstack Developer</span> from
+        Indonesia</h2>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -93,27 +94,43 @@
           <p class="fst-italic">
             I'm a college student at Politeknik Negeri Bandung, and study at Information Technology bachelor's degree.
             <br>
-            My dream after finishing study at Polban i wanna be Expert UI/UX Designer or maybe Graphic Designer.
+            I'm experienced as a Fullstack Developer and beginner DevOps. And i have a passion in Graphic Design such as
+            video editing, UI/UX, Logo Design etc.
           </p>
           <div class="row">
             <div class="col-lg-5">
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>12 June 2004</span></li>
                 <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.e</span></li> -->
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 821 2537 4783</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tangerang, Indonesia</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Hobbies:</strong> <span>Gaming, Sports, Sleep</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Motto Hidup:</strong> <span>"Jadikan Lelahmu Lillah"</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bandung, Indonesia</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Hobbies:</strong> <span>Gaming, Sports, Design</span>
+                </li>
               </ul>
             </div>
             <div class="col-lg-7">
               <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>18</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    var birthYear = 2004;
+                    var today = new Date();
+                    var age = today.getFullYear() - birthYear;
+                    // Adjust if birthday hasn't occurred yet this year
+                    var birthMonth = 5; // June (0-based index)
+                    var birthDay = 12;
+                    if (
+                      today.getMonth() < birthMonth ||
+                      (today.getMonth() === birthMonth && today.getDate() < birthDay)
+                    ) {
+                      age--;
+                    }
+                    document.getElementById("age").textContent = age;
+                  });
+                </script>
                 <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
-                  <span>thoriq.muhammad.tif422@polban.ac.id</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Lesson Learn:</strong>
-                    <span>"Mengulang Ilmu yang Sudah Dipelajari"</span></li>
+                  <span>thoriqmf123@gmail.com</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -171,85 +188,239 @@
     <div class="skills container">
 
       <div class="section-title">
-        <h2>Skills</h2>
+        <h2>Advanced Skills</h2>
       </div>
 
       <div class="row skills-content">
 
-        <div class="col-lg-6">
+        <div class="col-lg-2">
 
           <div class="progress">
-            <span class="skill">HTML <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <span class="skill">HTML</span>
           </div>
 
           <div class="progress">
-            <span class="skill">CSS <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <span class="skill">Laravel</span>
           </div>
 
           <div class="progress">
-            <span class="skill">React Javascript <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
-          </div>
-          <div class="progress">
-            <span class="skill">MySQL <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <span class="skill">ReactJS</span>
           </div>
 
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-2">
 
           <div class="progress">
-            <span class="skill">PHP <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <span class="skill">MySQL</span>
           </div>
 
           <div class="progress">
-            <span class="skill">C/C++ <i class="val">70%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <span class="skill">PostgreSQL</span>
           </div>
 
           <div class="progress">
-            <span class="skill">Photoshop <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <span class="skill">NodeJS</span>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2">
+
+          <div class="progress">
+            <span class="skill">JavaScript</span>
           </div>
 
           <div class="progress">
-            <span class="skill">Adobe Premiere Pro <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-              </div>
-            </div>
+            <span class="skill">PHP</span>
           </div>
+
+          <div class="progress">
+            <span class="skill">Figma</span>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2">
+
+          <div class="progress">
+            <span class="skill">GitHub</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">GitLab</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">CSS</span>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2">
+
+          <div class="progress">
+            <span class="skill">Tailwind CSS</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Bootstrap</span>
+          </div>
+
+          <!-- <div class="progress">
+            <span class="skill">CSS</span>
+          </div> -->
 
         </div>
 
       </div>
 
-    </div><!-- End Skills -->
+    </div>
+    <!-- End Skills -->
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Intermediate Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+         <div class="row skills-content">
+
+        <div class="col-lg-2">
+
+          <div class="progress">
+            <span class="skill">Docker</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Adobe Photoshop</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Adobe Premiere Pro</span>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2">
+
+          <div class="progress">
+            <span class="skill">Adobe Illustrator</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">MongoDB</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Flutter Android</span>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2">
+
+          <div class="progress">
+            <span class="skill">Python</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Blender 3D</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Godot</span>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2">
+
+          <div class="progress">
+            <span class="skill">C/C++</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Java</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Software Testing</span>
+          </div>
+
+        </div>
+
+        <div class="col-lg-2">
+
+          <!-- <div class="progress">
+            <span class="skill"></span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Bootstrap</span>
+          </div> -->
+
+          <!-- <div class="progress">
+            <span class="skill">CSS</span>
+          </div> -->
+
+        </div>
+
+      </div>
+
+      </div>
+
+    </div>
+    <!-- End Skills -->
+
+    <!-- ======= Skills  ======= -->
+    <div class="skills container">
+
+      <div class="section-title">
+        <h2>Beginner Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+         <div class="col-lg-2">
+
+          <div class="progress">
+            <span class="skill">Proxmox</span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">DevOps</span>
+          </div>
+
+          <!-- <div class="progress">
+            <span class="skill">CSS</span>
+          </div> -->
+
+        </div>
+
+         <div class="col-lg-2">
+
+          <!-- <div class="progress">
+            <span class="skill"></span>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Bootstrap</span>
+          </div> -->
+
+          <!-- <div class="progress">
+            <span class="skill">CSS</span>
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- End Skills -->
 
     <!-- ======= Interests ======= -->
     <div class="interests container">
@@ -273,70 +444,71 @@
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
           <div class="icon-box">
-            <i class="ri-window-fill" style="color: #e80368;"></i>
-            <h3>UI/UX</h3>
+            <i class="ri-code-s-slash-fill" style="color: #e80368;"></i>
+            <h3>Web Developer</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
           <div class="icon-box">
-            <i class="ri-gamepad-fill" style="color: #e361ff;"></i>
-            <h3>Gaming</h3>
+            <i class="ri-server-fill" style="color: #e361ff;"></i>
+            <h3>DevOps</h3>
           </div>
         </div>
-    </div><!-- End Interests -->
+      </div><!-- End Interests -->
 
-    <!-- ======= Testimonials ======= -->
-    <div class="testimonials container">
+      <!-- ======= Testimonials ======= -->
+      <!-- <div class="testimonials container">
 
-      <div class="section-title">
-        <h2>Testimonials</h2>
-      </div>
+        <div class="section-title">
+          <h2>Testimonials</h2>
+        </div>
 
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Kalau hidupmu malang coba ke bandung.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Septyana Agustina</h3>
-            <h4>Ceo of Septyana Corp.</h4>
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Kalau hidupmu malang coba ke bandung.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Septyana Agustina</h3>
+              <h4>Ceo of Septyana Corp.</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Jangan lupa sholat dan taubat.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+              <h3>M. Rizki Nurmuttaqin</h3>
+              <h4>Executive Programmer</h4>
+            </div>
+
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Dari keluarga baik-baik.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+              <h3>Bob Manuel</h3>
+              <h4>Ceo &amp; Founder</h4>
+            </div>
+
           </div>
+          <div class="swiper-pagination"></div>
+        </div>
 
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Jangan lupa sholat dan taubat.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>M. Rizki Nurmuttaqin</h3>
-            <h4>Executive Programmer</h4>
-          </div>
-
-          <div class="testimonial-item">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Dari keluarga baik-baik.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Bob Manuel</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
+        <div class="owl-carousel testimonials-carousel">
 
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
 
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div><!-- End Testimonials  -->
+      </div> -->
+      <!-- End Testimonials  -->
 
   </section><!-- End About Section -->
 
@@ -349,7 +521,7 @@
         <p>Check My Partner</p>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div>
           <table class="table">
             <thead class="text-white">
@@ -392,7 +564,7 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section><!-- End Resume Section -->
@@ -466,38 +638,92 @@
 
       <div class="section-title">
         <h2>Portfolio</h2>
-        <p>My Valorant Gameplay</p>
+        <p>My Documentation</p>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">Video</li>
-            <!-- <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li> -->
+            <li data-filter="*" class="filter-active">Web Development</li>
+            <li data-filter=".filter-app">Home Server Set Up</li>
+            <li data-filter=".filter-card">CI/CD Set Up</li>
+            <li data-filter=".filter-web">Docker</li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
       <div class="row portfolio-container">
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <video width="320" height="240" controls>
-            <source src="assets/video/video1.mp4" type="video/mp4">
-          </video>
+        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <img src="assets/img/portfolio/portfolio-1.jpg" width="320" height="240" alt="Portfolio 1" class="img-fluid">
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <video width="320" height="240" controls>
-            <source src="assets/video/video2.mp4" type="video/mp4">
-          </video>
+          <img src="assets/img/portfolio/portfolio-2.jpg" width="320" height="240" alt="Portfolio 2" class="img-fluid">
         </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <video width="320" height="240" controls>
-            <source src="assets/video/video3.mp4" type="video/mp4">
-          </video>
+          <img src="assets/img/portfolio/portfolio-3.jpg" width="320" height="240" alt="Portfolio 3" class="img-fluid">
+        </div> -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/webdev.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Lomba Web Development - IT EXPO UNJ</h4>
+              <p>2020</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/proxmox.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>My Own Built Home Server</h4>
+              <p>2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/submeet.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Fullstack Dev & DevOps - SubMeet Web Project</h4>
+              <p>submeet.id - 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/sicaper.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Fullstack Dev - SiCaPer Web Project</h4>
+              <p>sicaper.polban.dev - 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/proyek3.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>DevOps - Mata Kuliah : Proyek 3</h4>
+              <p>https://polban-space.cloudias79.com/penjadwalan-ruangan - 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/proyek3_2.png" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>DevOps - Mata Kuliah : Proyek 3</h4>
+              <p>https://polban-space.cloudias79.com/sipta - 2025</p>
+            </div>
+          </div>
         </div>
 
         <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
@@ -644,26 +870,27 @@
 
       <div class="row mt-2">
 
-        <div class="col-md-6 d-flex align-items-stretch">
+        <!-- <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
             <h3>My Address</h3>
-            <p>Jl. Malabar I no.20, Karang Tengah, Kota Tangerang 15157</p>
+            <p>Komplek ANGGARAN Margasari No.10, Margasari, Buah Batu, Bandung 40286</p>
           </div>
-        </div>
+        </div> -->
 
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+        <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-share-alt"></i>
             <h3>Social Profiles</h3>
             <div class="social-links">
-              <a href="https://twitter.com/tmfadhli_12" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://twitter.com/tmfadhli_12" target="_blank" class="twitter"><i
+                  class="bi bi-twitter"></i></a>
               <a href="https://www.facebook.com/thoriqmfadhli/" class="facebook" target="_blank"><i
                   class="bi bi-facebook"></i></a>
               <a href="https://www.instagram.com/fadlyyy.12/" class="instagram" target="_blank"><i
                   class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/thoriq-muhammad-fadhli-189bbb22a/" class="linkedin" target="_blank"><i
-                  class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/thoriq-muhammad-fadhli-189bbb22a/" class="linkedin"
+                target="_blank"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -672,26 +899,23 @@
           <div class="info-box">
             <i class="bx bx-envelope"></i>
             <h3>Email Me</h3>
-            <p>thoriq.muhammad.tif422@polban.ac.id</p>
+            <p>thoriqmf123@gmail.com</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
             <h3>Call Me</h3>
-            <p>+62 821 2537 4783</p>
+            <p>+62 858 6110 4832</p>
           </div>
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-12 my-5">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3978056700785!2d106.71025541415474!3d-6.211149195503683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9e54ceae309%3A0x2f5ff1039d8da7e7!2sJl.%20Malabar%20I%2C%20Karang%20Tengah%2C%20Kec.%20Karang%20Tengah%2C%20Kota%20Tangerang%2C%20Banten%2015157!5e0!3m2!1sen!2sid!4v1675410038942!5m2!1sen!2sid"
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4541210614448!2d107.65282147504414!3d-6.9556363930447125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e9764194349f%3A0xf7e7b0a02fa17e9d!2sKomplek%20ANGGARAN%20Margasari!5e0!3m2!1sen!2sid!4v1748822662812!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section><!-- End Contact Section -->
